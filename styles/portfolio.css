@@ -76,14 +76,12 @@ p {
   font-family: var(--default-font-family);
 }
 
-.content {
-  margin: 30px;
+.content p {
+  font-size: 14px;
 }
 
-.headshot-image {
-  width: 360px;
-  border-radius: 30px;
-  padding: 20px;
+.content {
+  margin: 30px;
 }
 
 .btn-branding {
