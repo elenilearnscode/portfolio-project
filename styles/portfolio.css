@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: var(--default-font-family);
+  background: white;
 }
 
 h1,
@@ -15,53 +15,63 @@ h3,
 h4,
 h5,
 h6 {
-  color: black;
   font-family: var(--heading-font-family);
-  font-weight: bold;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 80px;
   line-height: 1.5;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 48px;
 }
 
 p {
-  font-weight: normal;
+  font-family: var(--default-font-family);
   font-size: 16px;
   line-height: 30px;
+}
+
+img {
+  border-radius: 30px;
 }
 
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 80px 0px;
 }
 
 .hero p {
+  font-family: var(--default-font-family);
   font-size: 36px;
-  font-weight: bold;
   margin: 0;
   color: #272142;
 }
 
 .hero h2 {
-  font-family: var(--heading-font-family);
-  font-weight: normal;
-  line-height: 1.5;
-  font-size: 24px;
+  font-family: var(--default-font-family);
+  font-size: 40px;
+  line-height: 1;
+}
+
+.hero .row {
+  margin: 0;
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 60px 20px;
 }
 
 .content h1 {
   font-size: 64px;
   line-height: 80px;
+  margin-top: 60px;
 }
 
 .content h2 {
@@ -72,7 +82,7 @@ p {
 .content h3 {
   font-size: 24px;
   line-height: 1.5;
-
+  margin: 20px 0 0;
   font-family: var(--default-font-family);
 }
 
@@ -91,42 +101,147 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  margin: 50px;
 }
 
-.btn-branding-outline {
-  color: #00af91;
-  border: 1px solid var(--branding-color);
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
+.btn-branding:hover {
+  color: white;
+  box-shadow: 5px 5px 5px 1px rgb(95, 94, 94);
+  transition: all 100ms ease-in-out;
+}
+
+.btn-branding-outline:hover,
+.btn-branding-outline-work:hover {
+  color: white;
+  background: var(--branding-color);
+  transition: all 100ms ease-in-out;
+}
+
+.btn-branding-outline-work {
+  text-align: center;
 }
 
 .project-description {
-  padding: 120px 60px;
+  padding: 50px 60px;
+}
+
+.nav-bar {
+  background: var(--secondary-color);
+  max-width: 100%;
+  margin: 0;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 75px 0 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4aa96c;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+  font-weight: bold;
+}
+
+.headshot {
+  border-radius: 20px;
+  height: 500px;
+  margin-left: 60px;
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--branding-color);
+  transition: all 100ms ease-in-out;
 }
 
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
-    line-height: 56px;
   }
-
   h2 {
     font-size: 44px;
   }
-
-  .hero {
-    padding: 80px 20px;
+  h3 {
+    font-size: 26px;
   }
 
-  .content {
-    text-align: center;
-    padding: 0;
+  .hero h2 {
+    font-size: 20px;
   }
 
   .project-description {
-    padding: 0;
+    padding: 20px 0;
     text-align: center;
+  }
+
+  .content {
+    padding: 0px;
+    text-align: center;
+  }
+
+  .content h1 {
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 15px;
+  }
+
+  nav ul {
+    margin: 0;
+  }
+
+  footer .contact-box {
+    padding: 30px;
   }
 }
