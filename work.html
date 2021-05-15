@@ -21,51 +21,105 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00af91;">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light navigation" style="background-color: #00af91;">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Eleni Nicolaides</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-				aria-controls="navbarNavDropDown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggle-icon"></span>
+			<a class="navbar-brand name-brand" title="Work Page" href="/">Eleni Nicolaides</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-hamburger hamburger"></i>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="/" title="Homepage">Home</a>
+						<a class="nav-link non-active" aria-current="page" title="Homepage" href="/">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/about.html" title="About Eleni Nicolaides">About</a>
+						<a class="nav-link non-active" title="About Eleni" href="/about.html">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="/work.html" title="Eleni's Work">Work</a>
+						<a class="nav-link active-link" title="Eleni's Work" href="/work.html">Work</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/contact.html" title="Contact Eleni">Contact</a>
+						<a class="nav-link non-active" title="Contact Eleni Nicolaides" href="/contact.html">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<h1 class="mb-5">Check out what i've been coding!</h1>
-
-	<div class="container">
-		<div class="col-md-6 mb-4">
-			<a class="btn croissant-app-link" href="https://trusting-mirzakhani-f2f87d.netlify.app/" target="_blank">
-				<img src="images/croissant.png" class="img-fluid mb-3 rounded" alt="My Croissant App" />
-				<h3 class="text-center m-0">Croissant Project</h3>
-				<p class="text-center text-muted">
-					Built with HTML & CSS
-				</p>
+		<div class="content-container container">
+			<div class="content">
+				<h1 class="mb-5">Check out my projects</h1>
+				<div class="row">
+					<div class="col-md-6 mb-4">
+				<img src="images/croissant.png" alt="Croissant Website" class="img-fluid mt-5"
+					alt="Croissant Website Preview" />
+			</div>
+			<div class="col">
+				<div class="project-description">
+					<h2 class="mb-5">Croissant Website</h2>
+					<p class="mb-4 text-muted">
+						Multi-page Challenge, as part of the SheCodes Responsive
+					</p>
+					<div>
+						<a href="https://trusting-mirzakhani-f2f87d.netlify.app" class="btn btn-branding-outline"
+							target="_blank" title="Go to Croissant Website">Launch Project</a>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-6 mb-4">
-			<img src="images/prototype.png" class="img-fluid mb-3 rounded" alt="My Portfolio Prototype" />
-			<h3 class="text-center m-0">Portfolio Prototype</h3>
-			<p class="text-center text-muted">
-				Built with HTML, CSS & JavaScript
+		<div class="row">
+			<div class="col">
+				<div class="project-description">
+					<h2 class="mb-5">Portfolio Prototype</h3>
+						<p class="mb-4 text-muted">
+							Portfolio Prototype challenge, SheCodes Responsive. Built with bootstrap, HTML & CSS
+						</p>
+						<div>
+							<a href="https://elegant-northcutt-d3a8e0.netlify.app" class="btn btn-branding-outline"
+								target="_blank" title="Go to Prototype Portfolio">Launch Project</a>
+						</div>
+				</div>
+			</div>
+			<div class="col d-none d-lg-block">
+				<img src="images/prototype.png" class="img-fluid mt-5" alt="Prototype Portfolio preview" />
+			</div>
+		</div>
+<footer class="container">
+	<div class="contact-box d-flex justify-content-between mb-5">
+		<div class="mt-3">
+			<h3>Work Inquiry</h3>
+			<p class="text-muted">Let's work together!</p>
+		</div>
+		<div>
+			<a href="/contact.html" class="btn btn-branding d-none d-md-flex" title="Contact Eleni Nicolaides">Contact
+				Me</a>
+		</div>
+	</div>
+	<div class="cointainer-fluid text-center">
+		<a href="mailto:contact.enicolaides@gmail.com" class="email-link"
+			title="Email Eleni">contact.enicolaides@gmail.com</a>
+		<div class="social-links d-flex justify-content-center">
+			<a href="https://www.linkedin.com/in/eleni-nicolaides-3766011b4/" target="_blank" title="LinkedIn Profile">
+				<i class="fab fa-linkedin"></i>
+			</a>
+			<a href="https://github.com/elenilearnscode" target="_blank" title="GitHub Profile">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="https://www.instagram.com/eleni.codes/" target="_blank" title="Instagram Profile">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="https://twitter.com/Eleni_Codes/" target="_blank" title="Twitter Profile">
+				<i class="fab fa-twitter"></i>
+			</a>
+		</div>
+		<div class="code-info">
+			<p class="text-center text-muted mt-4">This portfolio project was coded by Eleni and is open sourced on </p>
+			<a href="https://github.com/elenilearnscode/responsive-portfolio" target="_blank"
+				title="See open-sourced code">GitHub</a>
 			</p>
-		</div>
-	</div>
-	</div>
-	</div>
+</footer>
+</div>
+</div>
 </body>
+
 </html>
